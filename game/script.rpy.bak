@@ -1,0 +1,66 @@
+﻿# Coloca el código de tu juego en este archivo.
+
+# Declara los personajes usados en el juego como en el ejemplo:
+
+define s = Character("Señora Nutriales")
+define a = Character("Señor Nutriales")
+
+# El juego comienza aquí.
+
+label start:
+
+    # Muestra una imagen de fondo: Aquí se usa un marcador de posición por
+    # defecto. Es posible añadir un archivo en el directorio 'images' con el
+    # nombre "bg room.png" or "bg room.jpg" para que se muestre aquí.
+
+    scene bg room
+
+    # Muestra un personaje: Se usa un marcador de posición. Es posible
+    # reemplazarlo añadiendo un archivo llamado "eileen happy.png" al directorio
+    # 'images'.
+
+    # Presenta las líneas del diálogo.
+
+    a "Hola mi vidita, cree esto para ti"
+
+    a "No es mucho aun pero espero que al menos te pueda gustar y poder irlo mejorando con el tiempo mientras aprendo"
+
+    a "Lo primero que quiero decirte es que eres lo mas importante para mi"
+
+    a "Se que te he lastimado mucho y por mucho tiempo"
+
+    a "Y no he sabido hacer mucho para mejorarlo"
+
+    a "Y tal vez debi desde hace rato intentar aprovechar lo que se me da mejor para solucionar algunas cosas"
+
+    a "Tomara un poco de tiempo pero lo dedicare con todo el gusto del mundo si asi puedo hacerte feliz y darte algo mejor que lo que he hecho hasta ahora"
+
+    a "Pero suficiente introduccion, ahora si vamos a lo importante"
+
+    a "¿Puedes adivinar cuanto te amo?"
+    
+    call pregunta2
+    
+
+    a "Correcto! Te amo demasiado mi vida. Temo que no alcanzo a decirte mas por ahora, pero creeme que veras mucho mas, aun hay bastante que quiero decir "
+    # Finaliza el juego:
+
+    return
+
+label pregunta:
+
+    a "Nop, intenta otra vez"
+
+label pregunta2:
+    menu: 
+            "Mucho":
+                jump pregunta
+
+            "Muchisimo":
+                jump pregunta
+
+            "Mas que muchisimo":
+                jump pregunta
+            "Inimaginablemente demasiado":
+                pass
+return
