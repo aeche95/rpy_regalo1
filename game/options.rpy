@@ -24,13 +24,14 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = "1.0"
+define config.version = "0.1"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.
 
 define gui.about = _p("""
+Pequeño juego para la Señora Nutriales, con mucho amor de parte de su Señor Nutriales
 """)
 
 
