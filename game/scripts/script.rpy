@@ -5,14 +5,15 @@
 define s = Character("Señora Nutriales")
 define a = Character("Señor Nutriales")
 
-image parque dia = im.Scale("parque_chia_dia.jpg",1920,1080)
-image parque noche = im.Scale("parque_chia_noche.jpg",1920,1080)
-image bar = im.Scale("bar_chia.jpg",1920,1080)
-image oaxaca = im.Scale("oaxaca_chia.jpg",1920,1080)
 
 # El juego comienza aquí.
 
 label start:
+    
+    play music "audio/music/Exist for Love.mp3"
+
+
+    show foca at izquierda
 
     a "Hola mi vidita, cree esto para ti"
 
@@ -45,7 +46,8 @@ label start:
     while not fueATodosLosLugares:
         call lugares
 
-
+    scene negro
+    show foca fondo
     a "Y hasta aca va todo por ahora mi vida, de nuevo, aun falta mucho por añadir pero poco a poco iras viendo"
     # Finaliza el juego:
 
@@ -84,7 +86,7 @@ label lugares:
             "El bar":
                 jump bar
             "Centro Chia":
-                jump centro chia
+                jump centro_chia
             "Oaxaca":
                 jump oaxaca
 
@@ -92,7 +94,7 @@ return
 
 label parque:
 
-    scene parque noche
+    scene parque dia
 
     if fueAlParque:
         a "Ya vinimos aca"
@@ -102,7 +104,8 @@ label parque:
 
         a "No se cuanto hemos hablado en este parque, de dia y de noche"
 
-    
+        a "Recuerdo bien esa noche que hablamos sin parar, hablamos de todo y la verdad para mi fue algo muy especial"
+
         $ fueAlParque = True
 return
 
@@ -122,12 +125,15 @@ label bar:
 
         a "Ademas que fue despues de mucho tiempo de no decidirme por lo que queria y dudar sin una buena razon, con lo que lo unico que logre fue lastimarte"
 
-
+        a "Supono que para ti no es un recuerdo muy alegre, y en verdad lamento eso, lo que debio ser de los momentos mas lindos al contrario creo que es de los menos agradables"
 
         $ fueAlBar = True
 return
 
-label centro chia:
+label centro_chia:
+
+    scene centro chia
+
     if fueACentroChia:
         a "Ya vinimos aca"
 
@@ -136,7 +142,9 @@ label centro chia:
 
         a "Como esa vez que vimos la pelicula de Rembrandt que fue increible!"
 
-        a ""
+        a "Y el acuerdo que intentamos, que aunque luego fracaso, en su momento fue nuestra demostracion de compromiso mutuo que aun nos tenemos"
+
+        a "Ademas de las visitas casuales y eventos como la vez que se me quedaron las llaves en el carro y toco traer la copia en didi, que aun asi son recuerdos lindos"
 
         $ fueACentroChia = True
 return
@@ -149,6 +157,8 @@ label oaxaca:
         a "Ya vinimos aca"
 
     else:
+        a "Buena eleccion, aca tambien tenemos muchos momentos hermosos, como olvidar el aniversario aca o la primera vez que vinimos"
+
         a ""
         $ fueAOaxaca = True
 
