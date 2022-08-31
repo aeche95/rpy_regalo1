@@ -171,7 +171,9 @@ label oaxaca:
     else:
         a "Buena eleccion, aca tambien tenemos muchos momentos hermosos, como olvidar el aniversario aca o la primera vez que vinimos"
 
-        a "Y esa comida que hemos probado como el codillo chamorro que era gigante y en esa salsa super rica, o el mezcal que nunca puede faltar "
+        a "Y esa comida que hemos probado como el codillo chamorro que era gigante y en esa salsa super rica, o el mezcal que nunca puede faltar."
+
+        a "Quien sabe cuando podremos volver mi vida, ojala pronto y comamos muy rico y la pasemos delicioso"
         $ fueAOaxaca = True
 
 return
