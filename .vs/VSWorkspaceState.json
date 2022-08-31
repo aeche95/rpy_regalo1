@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\game"
+    "\\game",
+    "\\game\\scripts"
   ],
+  "SelectedNode": "\\game\\scripts\\vars.rpy",
   "PreviewInSolutionExplorer": false
 }

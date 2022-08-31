@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/vars.rpy", line 14: Tab characters are not allowed in Ren'Py scripts.
+File "game/script.rpy", line 184: expected statement.
+    a: "Siempre es agradable volver a casa, pero por ahora es importante ver todos los lugares mi vida"
+     ^
 
-Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Apr  6 20:12:17 2022
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Tue Aug 30 22:37:18 2022
