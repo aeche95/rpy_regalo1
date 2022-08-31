@@ -186,7 +186,7 @@ label casa:
         a "Siempre es agradable volver a casa, pero por ahora es importante ver todos los lugares mi vida"
 
     else:
-        a ""
+        a "Este es nuestro hogar, que llevamos ya meses armando con esfuerzo, paciencia y mucho amor"
 
 
 return
