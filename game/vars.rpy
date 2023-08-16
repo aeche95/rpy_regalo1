@@ -10,6 +10,8 @@ default fueAOaxaca = False
 
 default fueATodosLosLugares = False
 
+default fueACasa = False
+
 transform izquierda:
     xalign 0.0
     yalign 1.0
